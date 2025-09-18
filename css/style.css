@@ -6,6 +6,28 @@
     --dark: #182333;
 }
 
+.whatsapp-fab {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #25D366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+      z-index: 9999;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+    }
+    .whatsapp-fab svg {
+      width: 28px;
+      height: 28px;
+      fill: white;
+    }
 .back-to-top {
     position: fixed;
     display: none;
