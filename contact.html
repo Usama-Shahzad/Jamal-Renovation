@@ -29,6 +29,30 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+    .whatsapp-fab {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #25D366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+      z-index: 9999;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+    }
+    .whatsapp-fab svg {
+      width: 28px;
+      height: 28px;
+      fill: white;
+    }
+  </style>
 </head>
 
 <body>
@@ -237,6 +261,16 @@
     
    <!-- Back to Top <a href="https://wa.me/33753425213?text=Hello, Welcome to Al Sadat Renovation, How can we help you today" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-whatsapp"></i></a>
    --><a href="https://wa.me/33753425213?text=Hello, Welcome to Al Sadat Renovation, How can we help you today" class="bi bi-whatsapp"></a>
+    <a id="whatsappFab" class="whatsapp-fab" target="_blank"></a>
+
+  <script>
+    const PHONE = "33753425213"; 
+    const TEXT = "Hello! Welcome to Al Sadat Renovation, How can we help you today.";
+    const encoded = encodeURIComponent(TEXT);
+    document.getElementById("whatsappFab").href = `https://wa.me/${PHONE}?text=${encoded}`;
+  </script>
+</body>
+</html>
 
 
     <!-- JavaScript Libraries -->
