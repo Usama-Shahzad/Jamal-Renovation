@@ -287,8 +287,13 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+ <a id="whatsappFab" class="whatsapp-fab" target="_blank"><i class="bi bi-whatsapp"></i></a>
+  <script>
+    const PHONE = "33753425213"; 
+    const TEXT = "Hello! I would like to inquire about renovation services.";
+    const encoded = encodeURIComponent(TEXT);
+    document.getElementById("whatsappFab").href = `https://wa.me/${PHONE}?text=${encoded}`;
+  </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
